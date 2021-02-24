@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2021/02/24/JS%E5%9F%BA%E7%A1%80%20-%20%E6%95%B0%E7%BB%84%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95/"/>
+    <url>/2021/02/24/JS%E5%9F%BA%E7%A1%80%20-%20%E6%95%B0%E7%BB%84%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E7%9B%B8%E5%85%B3%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h2 id="JS基础-数组的相关方法"><a href="#JS基础-数组的相关方法" class="headerlink" title="JS基础 - 数组的相关方法"></a>JS基础 - 数组的相关方法</h2><table><thead><tr><th>方法名</th><th>作用</th><th>参数</th><th>返回值</th><th>修改原数组</th></tr></thead><tbody><tr><td><strong><code>★push(n1, n2)</code></strong></td><td>追加元素到数组末尾</td><td>要追加的元素</td><td>数组的长度</td><td>修改</td></tr><tr><td><strong><code>unshift(n1, n2)</code></strong></td><td>追加元素到数组开头</td><td>要追加的元素</td><td>数组的长度</td><td>修改</td></tr><tr><td><strong><code>Array.isArray()</code></strong></td><td>判断一个值是否是数组</td><td>值或变量</td><td>布尔值</td><td>–</td></tr><tr><td><strong><code>pop()</code></strong></td><td>从数组末尾删除一个元素</td><td>无</td><td>删除的元素</td><td>修改</td></tr><tr><td><strong><code>shift()</code></strong></td><td>从数组开头添加一个元素</td><td>无</td><td>删除的元素</td><td>修改</td></tr><tr><td><strong><code>sort(fn)</code></strong></td><td>对数组进行排序</td><td>函数</td><td>排序后的数组</td><td>修改</td></tr><tr><td><strong><code>reverse()</code></strong></td><td>对数组进行翻转</td><td>无</td><td>翻转后的数组</td><td>修改</td></tr><tr><td><strong><code>★indexOf(元素)</code></strong></td><td>查找元素在数组中第一次出现的索引</td><td>要查找的元素</td><td>索引值 ( - 1)</td><td>不会修改</td></tr><tr><td><strong><code>lastIndexOf(元素)</code></strong></td><td>从后向前查找元素在数组中出现的索引</td><td>要查找的元素</td><td>索引值 ( - 1)</td><td>不会修改</td></tr><tr><td><strong><code>★join(连接符)</code></strong></td><td>把数组中元素连接并返回字符串</td><td>连接符</td><td>字符串</td><td>不会修改</td></tr><tr><td><strong><code>toString()</code></strong></td><td>把复杂数据类型转成字符串形式</td><td>无</td><td>字符串</td><td>不会修改</td></tr><tr><td><strong><code>★slice(m[, n])</code></strong></td><td>从m位置开始截取数组到n结束</td><td>索引值</td><td>新数组</td><td>不会修改</td></tr><tr><td><strong><code>★splice(m, n)</code></strong></td><td>从m位置开始删除数组, 删除n个</td><td>(索引, 个数)</td><td>删除元素的新数组</td><td>会修改</td></tr><tr><td><strong><code>concat(arr1, arr2)</code></strong></td><td>拼接两个或多个数组</td><td>要拼接的数组</td><td>拼接后的新数组</td><td>不会修改</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><h2 id="JS-基础-字符串的相关方法"><a href="#JS-基础-字符串的相关方法" class="headerlink" title="JS 基础 - 字符串的相关方法"></a>JS 基础 - 字符串的相关方法</h2><table><thead><tr><th>方法名</th><th>作用</th><th>参数</th><th>返回值</th></tr></thead><tbody><tr><td><strong><code>length</code></strong></td><td>获取字符串的长度</td><td>无</td><td>字符串的长度</td></tr><tr><td><strong><code>★str[i]</code></strong></td><td>获取指定索引位置的字符</td><td>无</td><td>单个字符</td></tr><tr><td><strong><code>charAt(i)</code></strong></td><td>获取指定索引位置的字符</td><td>索引</td><td>单个字符</td></tr><tr><td><strong><code>★indexOf(字符[, n])</code></strong></td><td>从位置 n 开始查找字符的索引位置</td><td>字符</td><td>索引值 (-1)</td></tr><tr><td><strong><code>lastIndexOf(字符)</code></strong></td><td>从后向前查找字符出现的索引位置</td><td>字符</td><td>索引值 (-1)</td></tr><tr><td><strong><code>★slice(m[, n])</code></strong></td><td>从 m 位置开始截取字符串, 截止到 n 位置</td><td>索引</td><td>截取后的字符</td></tr><tr><td><strong><code>★substr(m[, n])</code></strong></td><td>从 m 位置开始截取字符串, 截取 n 位数</td><td>索引</td><td>截取后的字符</td></tr><tr><td><strong><code>substring(m[, n])</code></strong></td><td>从 m 位置开始截取字符串, 截止到 n 位置</td><td>索引</td><td>截取后的字符</td></tr><tr><td><strong><code>★split(分隔符)</code></strong></td><td>把字符串按照指定的分隔符分隔成数组</td><td>分隔符</td><td>新数组</td></tr><tr><td><strong><code>toUpperCase()</code></strong></td><td>把字符串中的小写字母转大写</td><td>无</td><td>转化后的字符串</td></tr><tr><td><strong><code>toLowerCase()</code></strong></td><td>把字符串中的大写字母转小写</td><td>无</td><td>转化后的字符串</td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table><p><strong>备注:</strong><br>字符串中所有的方法都不会修改原本的字符串, 要想修改只能重新赋值;</p><p>重点记忆★的相关方法</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2021/02/24/SQL%20%E8%AF%AD%E5%8F%A5/"/>
+    <url>/2021/02/24/SQL%20%E8%AF%AD%E5%8F%A5/</url>
+    
+    <content type="html"><![CDATA[<h3 id="SQL-语句"><a href="#SQL-语句" class="headerlink" title="SQL 语句"></a>SQL 语句</h3><h6 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h6><p>select * from users         查询表单的所有内容</p><p>select status from users   查询表单中 status 的内容</p><h5 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h5><p>在 users 表单中 添加 usersname= xm，password=abc123 数据</p><p>insert into  users (username, password) values (‘xm’,’abc123’)    </p><h6 id="更新数据"><a href="#更新数据" class="headerlink" title="更新数据"></a>更新数据</h6><p>在 users 表单中 id=3 的password的密码 更新为 ‘zxcasd’</p><p>update users set password=’zxcasd’ where id=3</p><h6 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h6><p>delete from users where id=3   在users 表单中 删除id为3 的数据</p><h6 id="where-运算符"><a href="#where-运算符" class="headerlink" title="where 运算符"></a>where 运算符</h6><p>​     (1) &gt; 和 &gt;= </p><p>​      (2) &lt; 和 &lt;=</p><p>​      (3) != 或 &lt;&gt;</p><p>​      (4) =</p><p>​      (5) BETWEEN</p><p>​      (6) LIKE</p><h6 id="and-和-or-运算符"><a href="#and-和-or-运算符" class="headerlink" title="and  和 or  运算符"></a>and  和 or  运算符</h6><p>select * from users where id=3 and username=’shh’   查找id=3，username=shh; </p><p>select * from users where id=3 or username=’shh’ 查找id=3或username=’shh’</p><h6 id="order-by"><a href="#order-by" class="headerlink" title="order by"></a>order by</h6><p>select * from users order by status desc    用status 进行 降序排列</p><p>用 status 进行降序 在利用 id 进行升序</p><p>selcet *  from users order by status desc , id asc </p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>node中模块的加载机制</title>
     <link href="/2021/02/22/node%E4%B8%AD%E7%9A%84%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/"/>
     <url>/2021/02/22/node%E4%B8%AD%E7%9A%84%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/</url>
